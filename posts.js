@@ -5,6 +5,8 @@
 var POSTS = [
   {
     id: 'odyssey-nolan',
+    image: 'img/odyssey.jpg',
+    image_alt: 'The Odyssey movie photo',
     date_id: '08 Agt 2026',
     date_en: '08 Aug 2026',
     tag_id: 'Film',
@@ -82,6 +84,8 @@ var POSTS = [
   },
   {
     id: 'museum-kemerdekaan',
+    image: 'img/museum.jpg',
+    image_alt: 'Museum Kemerdekaan Indonesia',
     date_id: '10 Juli 2025',
     date_en: '10 July 2025',
     tag_id: 'Pengalaman',
@@ -151,6 +155,8 @@ var POSTS = [
   },
   {
     id: 'belajar-dari-nolan',
+    image: 'img/nolan.jpg',
+    image_alt: 'Learning from Nolan photo',
     date_id: '27 Jul 2026',
     date_en: '27 Jul 2026',
     tag_id: 'Film',
@@ -187,6 +193,8 @@ var POSTS = [
 <p>Bahwa bekerja untuk kebanggaan jangka panjang lebih bermakna daripada bekerja untuk tepuk tangan sesaat. Bahwa kedalaman selalu lebih tahan lama daripada popularitas. Dan bahwa kompromi terhadap visi, sekali pun, bisa menjadi titik balik yang disesali.</p>
 
 <p>Nolan tidak selalu benar. Tapi ia selalu jujur terhadap dirinya sendiri. Dan mungkin itu sudah cukup untuk menjadi definisi kesuksesan yang layak dipakai.</p>
+
+
     `,
     content_en: `
 <p>There's a quote whose origin I can't quite recall — perhaps from an interview, perhaps from somewhere else — but it has stuck with me for years: <em>"Producers want a film that will sell. Directors want a film that will be remembered."</em></p>
@@ -216,6 +224,71 @@ var POSTS = [
 <p>That working for long-term pride is more meaningful than working for momentary applause. That depth always outlasts popularity. And that a compromise on vision, even once, can become a turning point you regret.</p>
 
 <p>Nolan isn't always right. But he is always honest with himself. And maybe that's enough to serve as a definition of success worth adopting.</p>
+
+   
     `
+  }
+];
+
+var GLOSSARY = [
+  {
+    term_id: 'Karya',
+    term_en: 'Work',
+    definition_id: 'Hasil cipta atau proses kreatif yang dibuat manusia.',
+    definition_en: 'The result of creative work created by humans.'
+  },
+  {
+    term_id: 'Narasi',
+    term_en: 'Narrative',
+    definition_id: 'Cara cerita disusun dan disampaikan kepada audiens.',
+    definition_en: 'The way a story is organized and delivered to an audience.'
+  },
+  {
+    term_id: 'Sinema',
+    term_en: 'Cinema',
+    definition_id: 'Seni dan industri pembuatan film serta pengalaman menontonnya.',
+    definition_en: 'The art and industry of making films and experiencing them.'
+  },
+  {
+    term_id: 'Visual',
+    term_en: 'Visual',
+    definition_id: 'Segala hal yang bisa dilihat dan ditangkap melalui mata.',
+    definition_en: 'Everything that can be seen and perceived through the eyes.'
+  },
+  {
+    term_id: 'Tema',
+    term_en: 'Theme',
+    definition_id: 'Ide utama atau pesan yang ingin disampaikan dalam sebuah karya.',
+    definition_en: 'The main idea or message conveyed in a work.'
+  },
+  {
+    term_id: 'Audiens',
+    term_en: 'Audience',
+    definition_id: 'Kelompok orang yang menerima pesan atau menikmati karya.',
+    definition_en: 'The group of people receiving a message or enjoying a work.'
+  },
+  {
+    term_id: 'Estetika',
+    term_en: 'Aesthetics',
+    definition_id: 'Nilai keindahan dan rasa yang terkait dengan karya.',
+    definition_en: 'Values of beauty and taste related to a work.'
+  },
+  {
+    term_id: 'Konsep',
+    term_en: 'Concept',
+    definition_id: 'Gagasan dasar yang menjadi acuan dalam proses kreatif.',
+    definition_en: 'The basic idea used as a reference in the creative process.'
+  },
+  {
+    term_id: 'Analisis',
+    term_en: 'Analysis',
+    definition_id: 'Proses memahami dan mengurai suatu hal secara mendalam.',
+    definition_en: 'The process of understanding and breaking down a subject in depth.'
+  },
+  {
+    term_id: 'Interpretasi',
+    term_en: 'Interpretation',
+    definition_id: 'Cara seseorang menafsirkan makna dalam sebuah karya.',
+    definition_en: 'The way a person interprets the meaning of a work.'
   }
 ];

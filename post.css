@@ -251,6 +251,18 @@ a { color: inherit; }
   border-top: 1px solid var(--paper-dim);
 }
 
+.post-cover-wrap {
+  margin: 0 0 1.5rem;
+}
+
+.post-cover-image {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
 /* ---- RESPONSIVE ---- */
 @media (max-width: 640px) {
   .post-main { padding: 40px 5vw 60px; }
