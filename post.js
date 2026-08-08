@@ -21,7 +21,7 @@
 
   /* ---- if not found, redirect home ---- */
   if (!post) {
-    window.location.href = "Landing.html";
+    window.location.href = "index.html";
     return;
   }
 

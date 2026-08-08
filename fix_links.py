@@ -1,4 +1,4 @@
-with open('Landing.html', 'r', encoding='utf-8') as f:
+with open('index.html', 'r', encoding='utf-8') as f:
     html = f.read()
 
 replacements = [
@@ -16,7 +16,7 @@ for href, date in replacements:
     else:
         print(f'NOT FOUND for date: {date}')
 
-with open('Landing.html', 'w', encoding='utf-8') as f:
+with open('index.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
 print('Done!')

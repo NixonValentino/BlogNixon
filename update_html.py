@@ -1,7 +1,7 @@
 import re
 
 def modify_html():
-    with open('Landing.html', 'r', encoding='utf-8') as f:
+    with open('index.html', 'r', encoding='utf-8') as f:
         html = f.read()
 
     replacements = [
@@ -132,7 +132,7 @@ def modify_html():
             print(f"Warning: Could not find snippet to replace for pattern:\n{pattern}\n")
         html = new_html
             
-    with open('Landing.html', 'w', encoding='utf-8') as f:
+    with open('index.html', 'w', encoding='utf-8') as f:
         f.write(html)
 
 if __name__ == "__main__":

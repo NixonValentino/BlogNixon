@@ -1,5 +1,5 @@
 import re
-with open('Landing.html', 'r', encoding='utf-8') as f:
+with open('index.html', 'r', encoding='utf-8') as f:
     html = f.read()
 html = re.sub(r'<img[^>]+>', '<img>', html)
 html = re.sub(r'data:image/[^\"]+', '', html)

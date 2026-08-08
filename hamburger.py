@@ -1,6 +1,6 @@
 
 # Update HTML – add hamburger button
-with open('Landing.html', 'r', encoding='utf-8') as f:
+with open('index.html', 'r', encoding='utf-8') as f:
     html = f.read()
 
 btn = (
@@ -14,7 +14,7 @@ btn = (
 target = '<button type="button" class="icon-btn" id="langToggle"'
 if 'id="menuToggle"' not in html:
     html = html.replace(target, btn + target)
-    with open('Landing.html', 'w', encoding='utf-8') as f:
+    with open('index.html', 'w', encoding='utf-8') as f:
         f.write(html)
     print('HTML OK')
 else:
