@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogNixon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="Landing.css">
+</head>
+
+<body>
+    <section class="hero" id="beranda">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+
+        <nav class="nav">
+            <div class="pillbar">
+                <a href="#beranda" class="active" data-id="Beranda" data-en="Home">Beranda</a>
+                <a href="#perihal" data-id="Perihal" data-en="About">Perihal</a>
+                <a href="#kontak" data-id="Kontak" data-en="Contact">Kontak</a>
+                <a href="#langgani" data-id="Langgani" data-en="Subscribe">Langgani</a>
+            </div>
+
+            <div class="nav-tools">
+                <button type="button" class="icon-btn" id="langToggle" aria-label="Ganti bahasa / Switch language"
+                    title="EN / ID">EN</button>
+                <button type="button" class="icon-btn" id="musicToggle" aria-label="Putar musik" title="Musik">
+                    <span class="icon-off">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 18V5l12-2v13"></path>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <circle cx="18" cy="16" r="3"></circle>
+                        </svg>
+                    </span>
+                    <span class="icon-on">
+                        <svg viewBox="0 0 24 24">
+                            <rect x="5" y="4" width="4" height="16"></rect>
+                            <rect x="15" y="4" width="4" height="16"></rect>
+                        </svg>
+                    </span>
+                </button>
+                <audio id="bgm" loop preload="none">
+                    <!-- Taruh file musikmu di sini, contoh: -->
+                    <!-- <source src="musik.mp3" type="audio/mpeg"> -->
+                </audio>
+            </div>
+        </nav>
+
+        <div class="hero-body">
+            <div class="hero-grid">
+                <div>
+                    <p class="eyebrow mono">Catatan pribadi &middot; Jakarta</p>
+                    <h1 class="wordmark display">Nixon</h1>
+                    <p class="tagline">Ruang kecil tempat saya menulis tentang film, edukasi,
+                        dan hal-hal sederhana yang saya temui sehari-hari.</p>
+                    <a href="#tulisan" class="hero-cta">Baca tulisan terbaru &nbsp;→</a>
+                </div>
+
+                <div class="lens-wrap" id="lensWrap">
+                    <div class="lens" id="lens">
+                        <img>
+                        <div class="lens-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+                                <circle cx="11" cy="11" r="7"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="lens-caption">Fokus &middot; di balik yang blur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="perihal">
+        <div class="section-head">
+            <h2 class="display">Perihal</h2>
+            <span class="mono">01 &mdash; Tentang saya</span>
+        </div>
+        <div class="about-grid">
+            <div class="about-portrait">
+                <img>
+            </div>
+            <div class="about-text">
+                <p>Halo, saya Nixon. Blog ini saya mulai sebagai catatan pribadi — tempat menyimpan
+                    pikiran yang kadang terlalu panjang untuk diketik di caption media sosial.</p>
+                <p>Saya suka mengamati beberapa film di layar lebar, mulai dari film holywood sampai Indonesia. Sebagian
+                    besar tulisan di sini
+                    lahir dari obrolan santai, perjalanan singkat, atau sekadar duduk memperhatikan
+                    film yang sedang saya tonton.</p>
+                <div class="tag-row">
+                    <span class="tag">Film</span>
+                    <span class="tag">Edukasi</span>
+                    <span class="tag">Cerita harian</span>
+                    <span class="tag">Pengalaman</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section posts" id="tulisan">
+        <div class="section-head">
+            <h2 class="display">Tulisan Terbaru</h2>
+            <span class="mono">02 &mdash; Arsip</span>
+        </div>
+        <div class="post-list">
+            <a class="post" href="#">
+                <span class="mono">08 Agt 2026</span>
+                <div>
+                    <h3>Mengapa Film Odyssey Merupakan Film yang Patut di Apresiasi</h3>
+                    <p>Di luar dari banyak-nya kontroversi film the odyssey karya nolan. Film itu tetap harus di
+                        apresiasi.</p>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a class="post" href="#">
+                <span class="mono">10 July 2025</span>
+                <div>
+                    <h3>Pengalaman Mengunjungi Museum Kemerdekaan Indonesia</h3>
+                    <p>Saya melihat sebuah kesederhanaan dibalik besarnya negara Indonesia.</p>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+            <a class="post" href="#">
+                <span class="mono">27 Jul 2026</span>
+                <div>
+                    <h3>Belajar dari Nolan</h3>
+                    <p>Terkadang para producer hanya mencari film yang akan populer, namun sutradara mencari film yang
+                        akan berkenan.</p>
+                </div>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+    </section>
+
+    <footer id="kontak">
+        <div>
+            <h2 class="display">Ngobrol&nbsp;yuk.</h2>
+            <p>Punya cerita, kritik, atau sekadar mau menyapa? Kotak masuk saya selalu terbuka
+                untuk obrolan baru.</p>
+        </div>
+        <div class="contact-links" id="langgani">
+            <a href="mailto:halo@nixon.blog">halo@nixon.blog</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter / X</a>
+            <a href="#">Langganan email &nbsp;→</a>
+        </div>
+        <div class="copyright">
+            <span>© 2026 Nixon — Catatan Pribadi</span>
+            <span>Dibuat dengan secangkir kopi</span>
+        </div>
+    </footer>
+
+    <!-- js -->
+    <script src="Landing.js"></script>
+</body>
+
+</html>

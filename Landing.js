@@ -34,9 +34,10 @@
   (function(){
     var btn = document.getElementById('langToggle');
     if(!btn) return;
-    var currentLang = 'id';
+    
+    var currentLang = localStorage.getItem('langPref') || 'id';
 
-    function applyLang(lang){
+    function updateLanguageDOM(lang) {
       var nodes = document.querySelectorAll('[data-id][data-en]');
       nodes.forEach(function(node){
         node.innerHTML = lang === 'en' ? node.getAttribute('data-en') : node.getAttribute('data-id');
@@ -45,7 +46,25 @@
       btn.textContent = lang === 'en' ? 'ID' : 'EN';
       btn.title = lang === 'en' ? 'Beralih ke Bahasa Indonesia' : 'Switch to English';
       currentLang = lang;
+      localStorage.setItem('langPref', lang);
     }
+
+    function applyLang(lang){
+      var nodes = document.querySelectorAll('[data-id][data-en]');
+      
+      nodes.forEach(function(node){
+        node.classList.add('fade-out');
+      });
+
+      setTimeout(function(){
+        updateLanguageDOM(lang);
+        nodes.forEach(function(node){
+          node.classList.remove('fade-out');
+        });
+      }, 300);
+    }
+
+    updateLanguageDOM(currentLang);
 
     btn.addEventListener('click', function(){
       applyLang(currentLang === 'id' ? 'en' : 'id');
@@ -75,5 +94,21 @@
 
     audio.addEventListener('ended', function(){
       btn.classList.remove('is-active');
+    });
+  })();
+  // ---------- Hamburger Menu ----------
+  (function(){
+    var menuBtn = document.getElementById('menuToggle');
+    var pillbar = document.querySelector('.pillbar');
+    if(!menuBtn || !pillbar) return;
+    menuBtn.addEventListener('click', function(){
+      var open = pillbar.classList.toggle('show');
+      menuBtn.setAttribute('aria-expanded', String(open));
+    });
+    document.querySelectorAll('.pillbar a').forEach(function(a){
+      a.addEventListener('click', function(){ pillbar.classList.remove('show'); });
+    });
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.nav')){ pillbar.classList.remove('show'); }
     });
   })();

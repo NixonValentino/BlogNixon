@@ -27,6 +27,7 @@
             </div>
 
             <div class="nav-tools">
+                <button type="button" class="icon-btn hamburger-btn" id="menuToggle" aria-label="Toggle menu" title="Menu"><span class="ham-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></span></button>
                 <button type="button" class="icon-btn" id="langToggle" aria-label="Ganti bahasa / Switch language"
                     title="EN / ID">EN</button>
                 <button type="button" class="icon-btn" id="musicToggle" aria-label="Putar musik" title="Musik">
@@ -45,8 +46,8 @@
                     </span>
                 </button>
                 <audio id="bgm" loop preload="none">
-                    <!-- Taruh file musikmu di sini, contoh: -->
-                    <!-- <source src="musik.mp3" type="audio/mpeg"> -->
+                    <!-- Lofi music source from Pixabay (royalty free) -->
+                    <source src="https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
                 </audio>
             </div>
         </nav>
@@ -54,11 +55,10 @@
         <div class="hero-body">
             <div class="hero-grid">
                 <div>
-                    <p class="eyebrow mono">Catatan pribadi &middot; Jakarta</p>
+                    <p class="eyebrow mono" data-id="Catatan pribadi &middot; Jakarta" data-en="Personal Notes &middot; Jakarta">Catatan pribadi &middot; Jakarta</p>
                     <h1 class="wordmark display">Nixon</h1>
-                    <p class="tagline">Ruang kecil tempat saya menulis tentang film, edukasi,
-                        dan hal-hal sederhana yang saya temui sehari-hari.</p>
-                    <a href="#tulisan" class="hero-cta">Baca tulisan terbaru &nbsp;→</a>
+                    <p class="tagline" data-id="Ruang kecil tempat saya menulis tentang film, edukasi, dan hal-hal sederhana yang saya temui sehari-hari." data-en="A small space where I write about movies, education, and simple things I encounter every day.">Ruang kecil tempat saya menulis tentang film, edukasi, dan hal-hal sederhana yang saya temui sehari-hari.</p>
+                    <a href="#tulisan" class="hero-cta" data-id="Baca tulisan terbaru &nbsp;→" data-en="Read latest posts &nbsp;→">Baca tulisan terbaru &nbsp;→</a>
                 </div>
 
                 <div class="lens-wrap" id="lensWrap">
@@ -72,7 +72,7 @@
                             </svg>
                         </div>
                     </div>
-                    <p class="lens-caption">Fokus &middot; di balik yang blur</p>
+                    <p class="lens-caption" data-id="Fokus &middot; di balik yang blur" data-en="Focus &middot; behind the blur">Fokus &middot; di balik yang blur</p>
                 </div>
             </div>
         </div>
@@ -80,8 +80,8 @@
 
     <section class="section" id="perihal">
         <div class="section-head">
-            <h2 class="display">Perihal</h2>
-            <span class="mono">01 &mdash; Tentang saya</span>
+            <h2 class="display" data-id="Perihal" data-en="About">Perihal</h2>
+            <span class="mono" data-id="01 &mdash; Tentang saya" data-en="01 &mdash; About me">01 &mdash; Tentang saya</span>
         </div>
         <div class="about-grid">
             <div class="about-portrait">
@@ -89,17 +89,13 @@
                     alt="Foto Nixon">
             </div>
             <div class="about-text">
-                <p>Halo, saya Nixon. Blog ini saya mulai sebagai catatan pribadi — tempat menyimpan
-                    pikiran yang kadang terlalu panjang untuk diketik di caption media sosial.</p>
-                <p>Saya suka mengamati beberapa film di layar lebar, mulai dari film holywood sampai Indonesia. Sebagian
-                    besar tulisan di sini
-                    lahir dari obrolan santai, perjalanan singkat, atau sekadar duduk memperhatikan
-                    film yang sedang saya tonton.</p>
+                <p data-id="Halo, saya Nixon. Blog ini saya mulai sebagai catatan pribadi — tempat menyimpan pikiran yang kadang terlalu panjang untuk diketik di caption media sosial." data-en="Hello, I\'m Nixon. I started this blog as a personal note — a place to store thoughts that are sometimes too long to type in social media captions.">Halo, saya Nixon. Blog ini saya mulai sebagai catatan pribadi — tempat menyimpan pikiran yang kadang terlalu panjang untuk diketik di caption media sosial.</p>
+                <p data-id="Saya suka mengamati beberapa film di layar lebar, mulai dari film holywood sampai Indonesia. Sebagian besar tulisan di sini lahir dari obrolan santai, perjalanan singkat, atau sekadar duduk memperhatikan film yang sedang saya tonton." data-en="I like observing several movies on the big screen, from Hollywood to Indonesian movies. Most of the writings here are born from casual conversations, short trips, or just sitting and watching the movie I am watching.">Saya suka mengamati beberapa film di layar lebar, mulai dari film holywood sampai Indonesia. Sebagian besar tulisan di sini lahir dari obrolan santai, perjalanan singkat, atau sekadar duduk memperhatikan film yang sedang saya tonton.</p>
                 <div class="tag-row">
-                    <span class="tag">Film</span>
-                    <span class="tag">Edukasi</span>
-                    <span class="tag">Cerita harian</span>
-                    <span class="tag">Pengalaman</span>
+                    <span class="tag" data-id="Film" data-en="Movie">Film</span>
+                    <span class="tag" data-id="Edukasi" data-en="Education">Edukasi</span>
+                    <span class="tag" data-id="Cerita harian" data-en="Daily story">Cerita harian</span>
+                    <span class="tag" data-id="Pengalaman" data-en="Experience">Pengalaman</span>
                 </div>
             </div>
         </div>
@@ -107,33 +103,31 @@
 
     <section class="section posts" id="tulisan">
         <div class="section-head">
-            <h2 class="display">Tulisan Terbaru</h2>
-            <span class="mono">02 &mdash; Arsip</span>
+            <h2 class="display" data-id="Tulisan Terbaru" data-en="Latest Posts">Tulisan Terbaru</h2>
+            <span class="mono" data-id="02 &mdash; Arsip" data-en="02 &mdash; Archive">02 &mdash; Arsip</span>
         </div>
         <div class="post-list">
-            <a class="post" href="#">
-                <span class="mono">08 Agt 2026</span>
+            <a class="post" href="post.html?id=odyssey-nolan">
+                <span class="mono" data-id="08 Agt 2026" data-en="08 Aug 2026">08 Agt 2026</span>
                 <div>
-                    <h3>Mengapa Film Odyssey Merupakan Film yang Patut di Apresiasi</h3>
-                    <p>Di luar dari banyak-nya kontroversi film the odyssey karya nolan. Film itu tetap harus di
-                        apresiasi.</p>
+                    <h3 data-id="Mengapa Film Odyssey Merupakan Film yang Patut di Apresiasi" data-en="Why The Odyssey Movie Is A Movie Worth Appreciating">Mengapa Film Odyssey Merupakan Film yang Patut di Apresiasi</h3>
+                    <p data-id="Di luar dari banyak-nya kontroversi film the odyssey karya nolan. Film itu tetap harus di apresiasi." data-en="Apart from the many controversies of Nolan\'s The Odyssey movie. The movie still deserves to be appreciated.">Di luar dari banyak-nya kontroversi film the odyssey karya nolan. Film itu tetap harus di apresiasi.</p>
                 </div>
                 <span class="arrow">→</span>
             </a>
-            <a class="post" href="#">
-                <span class="mono">10 July 2025</span>
+            <a class="post" href="post.html?id=museum-kemerdekaan">
+                <span class="mono" data-id="10 July 2025" data-en="10 July 2025">10 July 2025</span>
                 <div>
-                    <h3>Pengalaman Mengunjungi Museum Kemerdekaan Indonesia</h3>
-                    <p>Saya melihat sebuah kesederhanaan dibalik besarnya negara Indonesia.</p>
+                    <h3 data-id="Pengalaman Mengunjungi Museum Kemerdekaan Indonesia" data-en="Experience of Visiting the Indonesian Independence Museum">Pengalaman Mengunjungi Museum Kemerdekaan Indonesia</h3>
+                    <p data-id="Saya melihat sebuah kesederhanaan dibalik besarnya negara Indonesia." data-en="I see a simplicity behind the greatness of the Indonesian state.">Saya melihat sebuah kesederhanaan dibalik besarnya negara Indonesia.</p>
                 </div>
                 <span class="arrow">→</span>
             </a>
-            <a class="post" href="#">
-                <span class="mono">27 Jul 2026</span>
+            <a class="post" href="post.html?id=belajar-dari-nolan">
+                <span class="mono" data-id="27 Jul 2026" data-en="27 Jul 2026">27 Jul 2026</span>
                 <div>
-                    <h3>Belajar dari Nolan</h3>
-                    <p>Terkadang para producer hanya mencari film yang akan populer, namun sutradara mencari film yang
-                        akan berkenan.</p>
+                    <h3 data-id="Belajar dari Nolan" data-en="Learning from Nolan">Belajar dari Nolan</h3>
+                    <p data-id="Terkadang para producer hanya mencari film yang akan populer, namun sutradara mencari film yang akan berkenan." data-en="Sometimes producers only look for movies that will be popular, but directors look for movies that will be memorable.">Terkadang para producer hanya mencari film yang akan populer, namun sutradara mencari film yang akan berkenan.</p>
                 </div>
                 <span class="arrow">→</span>
             </a>
@@ -142,19 +136,18 @@
 
     <footer id="kontak">
         <div>
-            <h2 class="display">Ngobrol&nbsp;yuk.</h2>
-            <p>Punya cerita, kritik, atau sekadar mau menyapa? Kotak masuk saya selalu terbuka
-                untuk obrolan baru.</p>
+            <h2 class="display" data-id="Ngobrol&nbsp;yuk." data-en="Let\'s&nbsp;talk.">Ngobrol&nbsp;yuk.</h2>
+            <p data-id="Punya cerita, kritik, atau sekadar mau menyapa? Kotak masuk saya selalu terbuka untuk obrolan baru." data-en="Got a story, critique, or just want to say hi? My inbox is always open for a new chat.">Punya cerita, kritik, atau sekadar mau menyapa? Kotak masuk saya selalu terbuka untuk obrolan baru.</p>
         </div>
         <div class="contact-links" id="langgani">
             <a href="mailto:halo@nixon.blog">halo@nixon.blog</a>
             <a href="#">Instagram</a>
             <a href="#">Twitter / X</a>
-            <a href="#">Langganan email &nbsp;→</a>
+            <a href="#" data-id="Langganan email &nbsp;→" data-en="Email subscription &nbsp;→">Langganan email &nbsp;→</a>
         </div>
         <div class="copyright">
-            <span>© 2026 Nixon — Catatan Pribadi</span>
-            <span>Dibuat dengan secangkir kopi</span>
+            <span data-id="© 2026 Nixon — Catatan Pribadi" data-en="© 2026 Nixon — Personal Notes">© 2026 Nixon — Catatan Pribadi</span>
+            <span data-id="Dibuat dengan secangkir kopi" data-en="Made with a cup of coffee">Dibuat dengan secangkir kopi</span>
         </div>
     </footer>
 

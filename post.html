@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nixon — Membaca</title>
+  <meta name="description" content="Baca tulisan terbaru dari Nixon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="post.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="post-header">
+    <a href="Landing.html" class="back-btn" id="backBtn">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      <span data-id="Kembali" data-en="Back">Kembali</span>
+    </a>
+    <div class="post-header-tools">
+      <button type="button" class="icon-btn" id="langToggle" aria-label="Ganti bahasa" title="EN / ID">EN</button>
+      <button type="button" class="icon-btn" id="musicToggle" aria-label="Putar musik" title="Musik">
+        <span class="icon-off">
+          <svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+        </span>
+        <span class="icon-on">
+          <svg viewBox="0 0 24 24"><rect x="5" y="4" width="4" height="16"></rect><rect x="15" y="4" width="4" height="16"></rect></svg>
+        </span>
+      </button>
+      <audio id="bgm" loop preload="none">
+        <source src="https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </header>
+
+  <!-- PROGRESS BAR -->
+  <div class="read-progress" id="readProgress"></div>
+
+  <!-- ARTICLE -->
+  <main class="post-main" id="postContent">
+    <!-- Content injected by JS from posts.js -->
+  </main>
+
+  <!-- NEXT / PREV -->
+  <nav class="post-nav" id="postNav">
+    <a class="post-nav-item prev" id="prevPost" href="#">
+      <span class="nav-label mono" data-id="Sebelumnya" data-en="Previous">Sebelumnya</span>
+      <span class="nav-title" id="prevTitle"></span>
+    </a>
+    <a class="post-nav-item next" id="nextPost" href="#">
+      <span class="nav-label mono" data-id="Berikutnya" data-en="Next">Berikutnya</span>
+      <span class="nav-title" id="nextTitle"></span>
+    </a>
+  </nav>
+
+  <footer class="post-footer">
+    <span class="mono" data-id="2026 Nixon — Catatan Pribadi" data-en="2026 Nixon — Personal Notes">2026 Nixon — Catatan Pribadi</span>
+  </footer>
+
+  <script src="posts.js"></script>
+  <script src="post.js"></script>
+</body>
+</html>
